@@ -1,6 +1,6 @@
 import Image from "next/image";
-import header from "@/assets/hr/Service/inner-5.jpg"; // صورة الهيدر للتواصل
-import CompanyMap from "../_map/CompanyMap";
+import header from "@/assets/hr/Service/inner-5.jpg"; 
+import MapWrapper from "../_map/MapWrapper"; // استدعاء الـ Wrapper
 import ContactForm from "../_form/ContactForm";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Header */}
-      <header className="relative w-full h-[20vh] md:h-[30vh] m-0 p-0">
+      <header className="relative w-full h-[20vh] md:h-[30vh]">
         <Image
           src={header}
           alt="تواصل معنا - HRSafPay"
@@ -38,12 +38,13 @@ export default function ContactPage() {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 animate-fadeIn">
             تواصل معنا مع HRSafPay
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl">
+          <p className="text-lg md:text-xl max-w-2xl animate-fadeIn delay-200">
             اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
           </p>
         </div>
@@ -51,7 +52,7 @@ export default function ContactPage() {
 
       {/* كارتات التواصل */}
       <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-        <div className="bg-gray-100 shadow-md rounded-xl p-8 text-center hover:shadow-xl transition">
+        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
           <FaMapMarkerAlt className="text-4xl text-indigo-800 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-indigo-900 mb-2">عنواننا</h3>
           <p className="text-gray-600 mb-4">القاهرة، مصر</p>
@@ -64,7 +65,7 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <div className="bg-gray-100 shadow-md rounded-xl p-8 text-center hover:shadow-xl transition">
+        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
           <FaEnvelope className="text-4xl text-indigo-800 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-indigo-900 mb-2">البريد الإلكتروني</h3>
           <p className="text-gray-600 mb-4">info@hrsafepay.com</p>
@@ -76,7 +77,7 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <div className="bg-gray-100 shadow-md rounded-xl p-8 text-center hover:shadow-xl transition">
+        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
           <FaPhoneAlt className="text-4xl text-indigo-800 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-indigo-900 mb-2">الدعم الفني</h3>
           <p className="text-gray-600 mb-4">+20 123 456 789</p>
@@ -90,10 +91,23 @@ export default function ContactPage() {
       </section>
 
       {/* خريطة الشركة */}
-      <CompanyMap />
+      <section className="px-6 md:px-20 max-w-7xl mx-auto mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-6 text-center">
+          موقعنا على الخريطة
+        </h2>
+        <MapWrapper /> {/* هنا بدل CompanyMap */}
+      </section>
 
       {/* فورم التواصل */}
-      <ContactForm />
+      <section className="px-6 md:px-20 max-w-4xl mx-auto mb-20">
+        <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-6 text-center">
+          راسلنا الآن
+        </h2>
+        <p className="text-center text-gray-500 mb-8">
+          نرد عليك عادة خلال أقل من <span className="font-semibold">24 ساعة</span>
+        </p>
+        <ContactForm />
+      </section>
     </>
   );
 }
