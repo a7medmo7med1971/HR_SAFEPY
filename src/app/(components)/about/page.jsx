@@ -3,7 +3,18 @@ import image from "@/assets/hr/About us/inner-2.jpg";
 import image2 from "@/assets/hr/About us/about-us.jpg";
 import { FaChartLine } from "react-icons/fa";   
 import { FaRocket } from "react-icons/fa";      
-import { FaFlag } from "react-icons/fa";        
+import { FaFlag } from "react-icons/fa";
+
+
+export const metadata = {
+  title: "عن شركة HRSafePay | حلول الموارد البشرية",
+  description:
+    "تعرف على رؤية ورسالة HRSafePay في تقديم حلول مبتكرة لإدارة الموارد البشرية، الرواتب، وخدمات التوظيف. شريكك الاستراتيجي للنمو المستدام.",
+  alternates: {
+    canonical: "https://hrsafepay.com/about",
+  },
+};
+
 export default function About() {
   return (
     <>
@@ -22,7 +33,7 @@ export default function About() {
         {/* المحتوى فوق الصورة */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            مرحبًا بكم في HRSafPay
+            مرحبًا بكم في HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl">
             حلول مبتكرة لإدارة الموارد البشرية وتحقيق نمو مستدام لشركتك

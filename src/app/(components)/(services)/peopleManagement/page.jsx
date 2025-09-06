@@ -4,11 +4,11 @@ import img1 from "@/assets/hr/Service/s-1.jpg"; // صورة إدارة المو�
 
 
 export const metadata = {
-  title: "إدارة الموظفين | HRSafPay",
+  title: "إدارة الموظفين | HRSafePay",
   description:
-    "تعرف على دور HRSafPay في تنظيم وإدارة الموظفين بكفاءة من خلال أنظمة حديثة تضمن الإنتاجية، الشفافية، ورضا فريق العمل.",
+    "تعرف على دور HRSafePay في تنظيم وإدارة الموظفين بكفاءة من خلال أنظمة حديثة تضمن الإنتاجية، الشفافية، ورضا فريق العمل.",
   openGraph: {
-    title: "إدارة الموظفين مع HRSafPay",
+    title: "إدارة الموظفين مع HRSafePay",
     description:
       "حلول متكاملة لإدارة الموظفين: متابعة الأداء، تنظيم الحضور والانصراف، وتطوير بيئة عمل احترافية.",
     url: "https://hrsafepay.com/peopleManagement",
@@ -17,7 +17,7 @@ export const metadata = {
         url: "/assets/hr/Service/s-1.jpg",
         width: 1200,
         height: 630,
-        alt: "خدمات إدارة الموظفين - HRSafPay",
+        alt: "خدمات إدارة الموظفين - HRSafePay",
       },
     ],
     locale: "ar_EG",
@@ -40,7 +40,7 @@ export default function Peoplemanagement() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            إدارة الموظفين مع HRSafPay
+            إدارة الموظفين مع HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl">
             نظم حديثة لإدارة الموظفين بذكاء وكفاءة تدعم نجاح شركتك.
@@ -53,10 +53,10 @@ export default function Peoplemanagement() {
         {/* النص */}
         <div className="space-y-6 md:text-right">
           <h2 className="text-2xl md:text-4xl font-bold text-indigo-900">
-            لماذا إدارة الموظفين مع HRSafPay؟
+            لماذا إدارة الموظفين مع HRSafePay؟
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            في HRSafPay نؤمن أن الموظفين هم أساس نجاح أي مؤسسة. لذلك نوفر حلولاً
+            في HRSafePay نؤمن أن الموظفين هم أساس نجاح أي مؤسسة. لذلك نوفر حلولاً
             متكاملة لإدارة الموظفين بشكل يضمن الكفاءة والشفافية. 
           </p>
           <p className="text-gray-600 leading-relaxed">
@@ -74,7 +74,7 @@ export default function Peoplemanagement() {
         <div className="relative w-full h-80 md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
           <Image
             src={img1}
-            alt="خدمات إدارة الموظفين - HRSafPay"
+            alt="خدمات إدارة الموظفين - HRSafePay"
             fill
             className="object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
           />

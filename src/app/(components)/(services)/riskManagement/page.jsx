@@ -3,11 +3,11 @@ import header from "@/assets/hr/Service/inner-4.jpg";
 import img2 from "@/assets/hr/Service/s-2.jpg"; // صورة إدارة المخاطر
 
 export const metadata = {
-  title: "إدارة المخاطر | HRSafPay",
+  title: "إدارة المخاطر | HRSafePay",
   description:
-    "تعرف على دور HRSafPay في إدارة المخاطر بفعالية عبر استراتيجيات حديثة تساعد شركتك على مواجهة التحديات وضمان الاستدامة.",
+    "تعرف على دور HRSafePay في إدارة المخاطر بفعالية عبر استراتيجيات حديثة تساعد شركتك على مواجهة التحديات وضمان الاستدامة.",
   openGraph: {
-    title: "إدارة المخاطر مع HRSafPay",
+    title: "إدارة المخاطر مع HRSafePay",
     description:
       "حلول لإدارة المخاطر: تقييم شامل، خطط استباقية، والتزام بأفضل الممارسات العالمية لتقليل الخسائر وضمان نمو مستدام.",
     url: "https://hrsafepay.com/riskManagement",
@@ -16,7 +16,7 @@ export const metadata = {
         url: "/assets/hr/Service/s-2.jpg",
         width: 1200,
         height: 630,
-        alt: "خدمات إدارة المخاطر - HRSafPay",
+        alt: "خدمات إدارة المخاطر - HRSafePay",
       },
     ],
     locale: "ar_EG",
@@ -39,7 +39,7 @@ export default function RiskManagement() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            إدارة المخاطر مع HRSafPay
+            إدارة المخاطر مع HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl">
             حلول عملية لحماية شركتك من المخاطر وضمان الاستقرار.
@@ -52,10 +52,10 @@ export default function RiskManagement() {
         {/* النص */}
         <div className="space-y-6 md:text-right">
           <h2 className="text-2xl md:text-4xl font-bold text-indigo-900">
-            لماذا إدارة المخاطر مع HRSafPay؟
+            لماذا إدارة المخاطر مع HRSafePay؟
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            إدراك المخاطر هو الخطوة الأولى لحماية شركتك. نحن في HRSafPay نوفر
+            إدراك المخاطر هو الخطوة الأولى لحماية شركتك. نحن في HRSafePay نوفر
             استراتيجيات متكاملة لتحديد وتقييم المخاطر المحتملة التي قد تواجه
             أعمالك، سواء كانت تشغيلية أو مالية أو مرتبطة بالموارد البشرية.
           </p>
@@ -73,7 +73,7 @@ export default function RiskManagement() {
         <div className="relative w-full h-80 md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
           <Image
             src={img2}
-            alt="خدمات إدارة المخاطر - HRSafPay"
+            alt="خدمات إدارة المخاطر - HRSafePay"
             fill
             className="object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
           />

@@ -1,6 +1,25 @@
 "use client";
 import { useState } from "react";
 
+
+
+export const metadata = {
+  title: "فورم التواصل | HRSafePay",
+  description:
+    "أرسل استفسارك أو اطلب استشارة مجانية عبر الفورم الخاص بشركة HRSafPay.",
+  alternates: {
+    canonical: "https://hrsafepay.com/contact/form",
+  },
+  openGraph: {
+    title: "فورم التواصل | HRSafPay",
+    description: "فورم سريع للتواصل مع HRSafPay وطلب استشارة مجانية.",
+    url: "https://hrsafepay.com/contactus",
+    type: "website",
+    locale: "ar_EG",
+  },
+};
+
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",

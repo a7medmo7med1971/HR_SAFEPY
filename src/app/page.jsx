@@ -4,8 +4,43 @@ import image from "@/assets/hr/Home/hrsafepay.png"
 import Image from 'next/image'
 import { FaArrowRight } from 'react-icons/fa6'
 import Link from 'next/link'
-  import { FaBriefcase, FaUsers, FaChartBar, FaLock } from "react-icons/fa";
+import { FaBriefcase, FaUsers, FaChartBar, FaLock } from "react-icons/fa";
 
+// src/app/page.jsx
+export const metadata = {
+  title: "شركة HR SafePay | حلول الموارد البشرية والرواتب",
+  description:
+    "شركة HR SafePay تقدم حلول مبتكرة لإدارة الموارد البشرية والرواتب، مع أنظمة أمان عالية ودقة في الحسابات. تواصل معنا الآن!",
+  keywords: [
+    "HR",
+    "موارد بشرية",
+    "إدارة الرواتب",
+    "حلول التوظيف",
+    "HR SafePay",
+    "شركات الموارد البشرية",
+  ],
+  authors: [{ name: "HR SafePay" }],
+  openGraph: {
+    title: "شركة HR SafePay | حلول الموارد البشرية والرواتب",
+    description:
+      "HR SafePay تقدم حلول متكاملة لإدارة الموارد البشرية مع أمان وحماية عالية.",
+    url: "https://your-domain.com",
+    siteName: "HR SafePay",
+    images: [
+      {
+        url: "https://your-domain.com/og-image.jpg", // غيّرها لصورة شعارك
+        width: 1200,
+        height: 630,
+        alt: "شركة HR SafePay",
+      },
+    ],
+    locale: "ar_EG",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://your-domain.com",
+  },
+};
 
 
 export default function Home() {
@@ -21,10 +56,10 @@ export default function Home() {
         <div className="space-y-6 md:text-right">
           <h2 className="text-3xl md:text-5xl font-extrabold text-indigo-900 leading-snug">
             مرحبًا بكم في <br />
-            <span className="text-blue-600">شركة HRSafPay</span>
+            <span className="text-blue-600">شركة HRSafePay</span>
           </h2>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-            نحن في HRSafPay نقدم حلولاً مبتكرة لإدارة الموارد البشرية، بدءًا من
+            نحن في HRSafePay نقدم حلولاً مبتكرة لإدارة الموارد البشرية، بدءًا من
             إدارة الرواتب بشكل آمن ودقيق، مرورًا بخدمات التوظيف واختيار
             الكفاءات، وصولًا إلى الاستشارات المتخصصة التي تساعد الشركات على
             تحسين الأداء وتحقيق أهدافها.

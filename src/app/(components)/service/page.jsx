@@ -11,21 +11,21 @@ import Link from "next/link";
 
 //  إضافة SEO للصفحة الرئيسية للخدمات
 export const metadata = {
-  title: "خدماتنا في HRSafPay | حلول الموارد البشرية",
+  title: "خدماتنا في HRSafePay | حلول الموارد البشرية",
   description:
-    "اكتشف حلول HRSafPay المتكاملة: إدارة الموظفين، الرواتب، التوظيف، إدارة التغيير والمخاطر، وتوظيف القيادات لدعم نمو شركتك بثقة.",
+    "اكتشف حلول HRSafePay المتكاملة: إدارة الموظفين، الرواتب، التوظيف، إدارة التغيير والمخاطر، وتوظيف القيادات لدعم نمو شركتك بثقة.",
   openGraph: {
-    title: "خدماتنا في HRSafPay",
+    title: "خدماتنا في HRSafePay",
     description:
       "حلول متكاملة للموارد البشرية: إدارة رواتب، توظيف كفاءات، استشارات HR احترافية.",
     url: "https://your-domain.com/service",
-    siteName: "HRSafPay",
+    siteName: "HRSafePay",
     images: [
       {
         url: "/_next/image?url=%2Fassets%2Fhr%2FService%2Finner-3.jpg&w=1200&q=75",
         width: 1200,
         height: 630,
-        alt: "HRSafPay Services",
+        alt: "HRSafePay Services",
       },
     ],
     locale: "ar_EG",
@@ -40,7 +40,7 @@ export default function Service() {
       <header className="relative w-full h-[20vh] md:h-[30vh] m-0 p-0">
         <Image
           src={header}
-          alt="خدمات الموارد البشرية HRSafPay"
+          alt="خدمات الموارد البشرية HRSafePay"
           fill
           priority
           className="object-cover object-center"
@@ -49,7 +49,7 @@ export default function Service() {
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            خدماتنا في HRSafPay
+            خدماتنا في HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-3xl">
             نوفر حلول متكاملة للموارد البشرية: إدارة رواتب دقيقة، توظيف الكفاءات،

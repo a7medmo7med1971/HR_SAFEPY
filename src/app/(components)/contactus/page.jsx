@@ -5,26 +5,47 @@ import ContactForm from "../_form/ContactForm";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export const metadata = {
-  title: "تواصل معنا | HRSafPay",
+  title: "تواصل معنا | HRSafePay",
   description:
-    "تواصل مع شركة HRSafPay للحصول على استشارة مجانية وحلول مبتكرة لإدارة الموارد البشرية.",
+    "تواصل مع شركة HRSafePay للحصول على استشارة مجانية وحلول مبتكرة لإدارة الموارد البشرية.",
+  keywords: [
+    "HR",
+    "Payroll",
+    "Cairo",
+    "Egypt",
+    "حلول الموارد البشرية",
+    "إدارة الرواتب",
+    "HRSafePay",
+    "استشارات الموارد البشرية",
+  ],
+  alternates: {
+    canonical: "https://hrsafepay.com/contact",
+  },
   openGraph: {
-    title: "تواصل معنا | HRSafPay",
+    title: "تواصل معنا | HRSafePay",
     description:
-      "تواصل مع HRSafPay الآن واطلب استشارة مجانية أو أرسل رسالة عبر الفورم الإلكتروني.",
+      "تواصل مع HRSafePay الآن واطلب استشارة مجانية أو أرسل رسالة عبر الفورم الإلكتروني.",
     url: "https://hrsafepay.com/contact",
     images: [
       {
         url: "/assets/hr/Service/inner-5.jpg",
         width: 1200,
         height: 630,
-        alt: "تواصل معنا - HRSafPay",
+        alt: "تواصل معنا - HRSafePay",
       },
     ],
     locale: "ar_EG",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "تواصل معنا | HRSafePay",
+    description:
+      "تواصل مع HRSafePay الآن واطلب استشارة مجانية أو أرسل رسالة عبر الفورم الإلكتروني.",
+    images: ["/assets/hr/Service/inner-5.jpg"],
+  },
 };
+
 
 export default function ContactPage() {
   return (
@@ -33,7 +54,7 @@ export default function ContactPage() {
       <header className="relative w-full h-[20vh] md:h-[30vh]">
         <Image
           src={header}
-          alt="تواصل معنا - HRSafPay"
+          alt="تواصل معنا - HRSafePay"
           fill
           priority
           className="object-cover object-center"
@@ -42,7 +63,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 animate-fadeIn">
-            تواصل معنا مع HRSafPay
+            تواصل معنا مع HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl animate-fadeIn delay-200">
             اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
