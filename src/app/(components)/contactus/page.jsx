@@ -68,7 +68,7 @@ export default function ContactPage() {
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
            تواصل معنا مع HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl">
+          <p className="text-lg md:text-xl max-w-xl">
            اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
           </p>
         </div>
