@@ -41,11 +41,11 @@ export default function LeadershipHiring() {
         <div className="absolute inset-0 bg-black/40" />
 
         {/* المحتوى فوق الصورة */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4">
           توظيف القيادات مع HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl">
+          <p className="text-lg md:text-lg max-w-lg">
            نساعدك في اختيار القيادات التي تقود شركتك نحو النمو والنجاح.
           </p>
         </div>

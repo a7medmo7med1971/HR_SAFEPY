@@ -50,11 +50,11 @@ export default function Service() {
         <div className="absolute inset-0 bg-black/40" />
 
         {/* المحتوى فوق الصورة */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4">
           خدماتنا في HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-xl">
+          <p className="text-lg md:text-lg max-w-lg">
                نوفر حلول متكاملة للموارد البشرية: إدارة رواتب دقيقة، توظيف الكفاءات،
             واستشارات احترافية تساعد شركتك على النمو بثقة.
           </p>
