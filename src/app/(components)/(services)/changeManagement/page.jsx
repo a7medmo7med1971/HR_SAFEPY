@@ -30,20 +30,24 @@ export default function ChangeManagement() {
     <>
       {/* الهيدر */}
       <header className="relative w-full h-[20vh] md:h-[30vh] m-0 p-0">
+        {/* صورة الكوفر */}
         <Image
           src={header}
           alt="Cover"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center" // هنا خليتها cover مش contain
         />
+        {/* Overlay شفاف */}
         <div className="absolute inset-0 bg-black/40" />
+
+        {/* المحتوى فوق الصورة */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            إدارة التغيير مع HRSafePay
+           إدارة التغيير مع HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl">
-            نساعد شركتك على التكيف مع التغيرات وبناء مستقبل أكثر استقرارًا.
+             نساعد شركتك على التكيف مع التغيرات وبناء مستقبل أكثر استقرارًا.
           </p>
         </div>
       </header>
