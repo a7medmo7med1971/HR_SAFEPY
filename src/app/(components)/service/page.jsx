@@ -38,21 +38,24 @@ export default function Service() {
     <>
       {/* هيدر */}
       <header className="relative w-full h-[20vh] md:h-[30vh] m-0 p-0">
+        {/* صورة الكوفر */}
         <Image
           src={header}
-          alt="خدمات الموارد البشرية HRSafePay"
+          alt="Cover"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center" // هنا خليتها cover مش contain
         />
+        {/* Overlay شفاف */}
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+        {/* المحتوى فوق الصورة */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            خدماتنا في HRSafePay
+          خدماتنا في HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl">
-            نوفر حلول متكاملة للموارد البشرية: إدارة رواتب دقيقة، توظيف الكفاءات،
+          <p className="text-lg md:text-xl max-w-2xl">
+               نوفر حلول متكاملة للموارد البشرية: إدارة رواتب دقيقة، توظيف الكفاءات،
             واستشارات احترافية تساعد شركتك على النمو بثقة.
           </p>
         </div>
