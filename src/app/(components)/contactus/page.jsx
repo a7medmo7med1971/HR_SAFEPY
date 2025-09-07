@@ -66,10 +66,10 @@ export default function ContactPage() {
         {/* المحتوى فوق الصورة */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            مرحبًا بكم في HRSafePay
+            تواصل معنا مع HRSafePay
           </h1>
           <p className="text-lg md:text-xl max-w-2xl">
-            حلول مبتكرة لإدارة الموارد البشرية وتحقيق نمو مستدام لشركتك
+             اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
           </p>
         </div>
       </header>
