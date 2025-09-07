@@ -30,7 +30,7 @@ export default function Navbar() {
           aria-controls="main-menu"
           aria-expanded={mobileOpen}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm 
-          text-gray-300 rounded-lg md:hidden hover:bg-indigo-800 focus:outline-none "
+          text-gray-300 rounded-lg md:hidden hover:bg-indigo-800 focus:outline-none  "
         >
           <svg
             className="w-6 h-6"
@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Links */}
         <div
           id="main-menu"
-          className={`${mobileOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
+          className={`${mobileOpen ? "block" : "hidden"} transform transition-all duration-300 w-full md:block md:w-auto `}
         >
           <ul
             className="flex flex-col md:flex-row items-center md:gap-8 gap-3 mt-4 md:mt-0 text-white font-medium"
@@ -75,8 +75,7 @@ export default function Navbar() {
                 عن HR SafePay
               </Link>
             </li>
-
-            {/* Dropdown */}
+{/* Dropdown */}
 <li className="relative">
   <button
     id="services-menu-button"
@@ -112,42 +111,71 @@ export default function Navbar() {
       ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}
   >
     <li>
-      <Link href="/service" className="block px-4 py-2 hover:bg-indigo-50">
-       خدمات HRSafepay 
+      <Link
+        href="/service"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)} // يقفل بعد الضغط
+      >
+        خدمات HRSafepay
       </Link>
     </li>
     <li>
-      <Link href="/peopleManagement" className="block px-4 py-2 hover:bg-indigo-50">
-       خدمات الموظفين 
+      <Link
+        href="/peopleManagement"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
+        خدمات الموظفين
       </Link>
     </li>
     <li>
-      <Link href="/changeManagement" className="block px-4 py-2 hover:bg-indigo-50">
-        إدارة التغيير 
+      <Link
+        href="/changeManagement"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
+        إدارة التغيير
       </Link>
     </li>
     <li>
-      <Link href="/riskManagement" className="block px-4 py-2 hover:bg-indigo-50">
-       خدمات المخاطر 
+      <Link
+        href="/riskManagement"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
+        خدمات المخاطر
       </Link>
     </li>
     <li>
-      <Link href="/payroll" className="block px-4 py-2 hover:bg-indigo-50">
-      خدمات الرواتب 
+      <Link
+        href="/payroll"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
+        خدمات الرواتب
       </Link>
     </li>
     <li>
-      <Link href="/changeManagement" className="block px-4 py-2 hover:bg-indigo-50">
+      <Link
+        href="/recruitment"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
         خدمات التوظيف
       </Link>
     </li>
     <li>
-      <Link href="/leadershipHiring" className="block px-4 py-2 hover:bg-indigo-50">
-        توظيف القيادات 
+      <Link
+        href="/leadershipHiring"
+        className="block px-4 py-2 hover:bg-indigo-50"
+        onClick={() => setIsOpen(false)}
+      >
+        توظيف القيادات
       </Link>
     </li>
   </ul>
 </li>
+
 
 
             <li>
