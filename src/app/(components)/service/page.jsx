@@ -54,7 +54,7 @@ export default function Service() {
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
           خدماتنا في HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl">
+          <p className="text-lg md:text-xl max-w-xl">
                نوفر حلول متكاملة للموارد البشرية: إدارة رواتب دقيقة، توظيف الكفاءات،
             واستشارات احترافية تساعد شركتك على النمو بثقة.
           </p>
