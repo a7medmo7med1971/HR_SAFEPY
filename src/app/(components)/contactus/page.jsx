@@ -51,22 +51,25 @@ export default function ContactPage() {
   return (
     <>
       {/* Header */}
-      <header className="relative w-full h-[20vh] md:h-[30vh]">
+      <header className="relative w-full h-[20vh] md:h-[30vh] m-0 p-0">
+        {/* صورة الكوفر */}
         <Image
           src={header}
-          alt="تواصل معنا - HRSafePay"
+          alt="Cover"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center" // هنا خليتها cover مش contain
         />
-                <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 animate-fadeIn">
+        {/* Overlay شفاف */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* المحتوى فوق الصورة */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
             تواصل معنا مع HRSafePay
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl animate-fadeIn delay-200">
-            اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
+          <p className="text-lg md:text-xl max-w-2xl">
+             اتصل بنا أو أرسل رسالة عبر الفورم للحصول على استشارة مجانية وحلول مبتكرة.
           </p>
         </div>
       </header>
