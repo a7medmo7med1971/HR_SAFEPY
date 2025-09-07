@@ -2,7 +2,7 @@ import Image from "next/image";
 import header from "@/assets/hr/Service/inner-5.jpg"; 
 import MapWrapper from "../_map/MapWrapper"; // استدعاء الـ Wrapper
 import ContactForm from "../_form/ContactForm";
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import ContactCards from "./_ContactCards/ContactCards";
 
 export const metadata = {
   title: "تواصل معنا | HRSafePay",
@@ -74,45 +74,7 @@ export default function ContactPage() {
         </div>
       </header>
 
-      {/* كارتات التواصل */}
-      <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
-          <FaMapMarkerAlt className="text-4xl text-indigo-800 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-indigo-900 mb-2">عنواننا</h3>
-          <p className="text-gray-600 mb-4">القاهرة، مصر</p>
-          <a
-            href="https://www.google.com/maps?q=القاهرة"
-            target="_blank"
-            className="text-indigo-800 font-semibold hover:underline"
-          >
-            عرض الموقع
-          </a>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
-          <FaEnvelope className="text-4xl text-indigo-800 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-indigo-900 mb-2">البريد الإلكتروني</h3>
-          <p className="text-gray-600 mb-4">info@hrsafepay.com</p>
-          <a
-            href="mailto:info@hrsafepay.com"
-            className="text-indigo-800 font-semibold hover:underline"
-          >
-            أرسل رسالة
-          </a>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all">
-          <FaPhoneAlt className="text-4xl text-indigo-800 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-indigo-900 mb-2">الدعم الفني</h3>
-          <p className="text-gray-600 mb-4">+20 123 456 789</p>
-          <a
-            href="tel:+20123456789"
-            className="text-indigo-800 font-semibold hover:underline"
-          >
-            اتصل بنا
-          </a>
-        </div>
-      </section>
+      <ContactCards></ContactCards>
 
       {/* خريطة الشركة */}
       <section className="px-6 md:px-20 max-w-7xl mx-auto mb-16">

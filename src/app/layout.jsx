@@ -2,6 +2,7 @@ import "./globals.css";
 import { Tajawal } from "next/font/google";
 import Navbar from "./(components)/_navbar/Navbar";
 import Footer from "./(components)/_footer/Footer";
+import BackToTopButton from "./(components)/BackToTopButton";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
       <body className="grid min-h-screen grid-rows-[auto_1fr_auto] bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
         <Navbar />
        <main >{children}</main>
+        <BackToTopButton /> {/* زرار الرجوع لأعلى */}
         <Footer className="mt-2" />
 
         {/* Structured Data */}
