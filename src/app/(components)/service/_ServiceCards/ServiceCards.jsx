@@ -48,6 +48,32 @@ export default function ServiceCards({ cards }) {
           </div>
         ))}
       </div>
+
+              <div className="text-center mt-20" data-aos="fade-up">
+          <div className="bg-blue-950 rounded-3xl p-10 text-white shadow-2xl relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-x-20 -translate-y-20"></div>
+              <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full translate-x-20 translate-y-20"></div>
+            </div>
+            
+            <div className="relative z-10">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">هل تحتاج استشارة مجانية؟</h3>
+              <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
+                فريقنا من الخبراء جاهز لمساعدتك في اختيار الحل الأمثل لاحتياجاتك
+              </p>
+              <Link
+                href="/contactus" 
+                className="inline-flex items-center gap-3 bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl"
+              >
+                احجز استشارتك الآن
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
     </section>
   );
 }

@@ -36,7 +36,7 @@ export default function HeroSection() {
           <Link
             href={"/contactus"}
             aria-label="تواصل معنا عبر شركة HR SafePay"
-            className="mt-6 px-6 md:px-8 py-2 md:py-3 flex items-center gap-2 bg-blue-600 hover:bg-indigo-800 text-white rounded-lg shadow-lg transition duration-300"
+            className="mt-6 px-6 md:px-8 py-2 md:py-3 flex items-center gap-2 bg-blue-950 hover:bg-indigo-800 text-white rounded-lg shadow-lg transition duration-300"
           >
             <FaArrowRight className="text-sm" aria-hidden="true" />
             تواصل معنا
