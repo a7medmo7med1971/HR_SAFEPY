@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <Navbar />
        <main >{children}</main>
         <BackToTopButton /> {/* زرار الرجوع لأعلى */}
-        <Footer className="mt-2" />
+        <Footer className="mt-5" />
 
         {/* Structured Data */}
         <script

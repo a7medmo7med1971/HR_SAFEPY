@@ -60,7 +60,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 right-0 z-2000 transition-all duration-300 ease-in-out ${
           isScrolled
             ? "bg-indigo-950/95 backdrop-blur-md shadow-lg"
             : "bg-indigo-950"
@@ -136,7 +136,7 @@ export default function Navbar() {
                         { href: "/changeManagement", text: "إدارة التغيير" },
                         { href: "/riskManagement", text: "خدمات المخاطر" },
                         { href: "/payroll", text: "خدمات الرواتب" },
-                        { href: "/recruitment", text: "خدمات التوظيف" },
+                        { href: "/staffing", text: "خدمات التوظيف" },
                         { href: "/leadershipHiring", text: "توظيف القيادات" },
                       ].map((item, index) => (
                         <Link
