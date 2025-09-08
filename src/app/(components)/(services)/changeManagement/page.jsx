@@ -40,7 +40,6 @@ export default function ChangeManagement() {
         />
         {/* Overlay شفاف */}
         <div className="absolute inset-0 bg-black/40" />
-
         {/* المحتوى فوق الصورة */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-2xl md:text-5xl font-bold mb-4">
