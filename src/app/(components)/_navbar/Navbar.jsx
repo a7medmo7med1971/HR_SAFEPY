@@ -244,7 +244,7 @@ export default function Navbar() {
                       { href: "/changeManagement", text: "إدارة التغيير" },
                       { href: "/riskManagement", text: "خدمات المخاطر" },
                       { href: "/payroll", text: "خدمات الرواتب" },
-                      { href: "/recruitment", text: "خدمات التوظيف" },
+                      { href: "/staffing", text: "خدمات التوظيف" },
                       { href: "/leadershipHiring", text: "توظيف القيادات" },
                     ].map((item, index) => (
                       <Link
